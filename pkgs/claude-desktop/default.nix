@@ -61,11 +61,11 @@ let
   sources = {
     x86_64-linux = {
       debArch = "amd64";
-      hash = "sha256-nFz11MiyNWd5o93n3t/hwwGnIjlxWXGYIT2BX+jM+lU=";
+      hash = "sha256-0QlE+lZjuZdADPZsXHc4/WrPZU+KrqyluZTrFHqms18=";
     };
     aarch64-linux = {
       debArch = "arm64";
-      hash = "sha256-BwWAm/yMcod6q1Ucypmy/4YyhJiX9HFECWxvGK04SM8=";
+      hash = "sha256-IItjfpUfU9RiHW7cFZjCG9pmRgLtQJrTe2c1AhvphA4=";
     };
   };
 
@@ -135,7 +135,7 @@ let
 in
 stdenv.mkDerivation (finalAttrs: {
   pname = "claude-desktop";
-  version = "5.11492.0";
+  version = "5.11492.2";
 
   src = fetchurl {
     url = "https://downloads.claude.ai/claude-desktop/apt/stable/pool/main/c/claude-desktop/claude-desktop_${finalAttrs.version}_${source.debArch}.deb";
